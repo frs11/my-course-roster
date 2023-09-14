@@ -1,0 +1,75 @@
+[
+    {
+      "id": "1",
+      "title": "Introduction to Programming",
+      "cover": "../src/assets/images/Rectangle 2-2.png",
+      "details": "Covers the fundamentals of programming languages, algorithms, and problem-solving.",
+      "credit": 3,
+      "price": 15000
+    },
+    {
+      "id": "2",
+      "title": "Algorithms",
+      "cover": "../src/assets/images/Rectangle 2-3.png",
+      "details": "Focuses on the study of fundamental data structures and algorithm design techniques.",
+      "credit": 4,
+      "price": 25000
+    },
+    {
+      "id": "3",
+      "title": "Introduction to C++",
+      "cover": "../src/assets/images/Rectangle 2-4.png",
+      "details": "Explores the internal components and structure of computer systems.",
+      "credit": 6,
+      "price": 18000
+    },
+    {
+      "id": "4",
+      "title": "Data Structures",
+      "cover": "../src/assets/images/Rectangle 2-7.png",
+      "details": "Introduces database concepts and SQL for data storage and retrieval.",
+      "credit": 2,
+      "price": 12000
+    },
+    {
+      "id": "5",
+      "title": "AWS, Cloud Computing",
+      "cover": "../src/assets/images/Rectangle 2-8.png",
+      "details": "Examines the principles and functions of computer operating systems.",
+      "credit": 4,
+      "price": 30000
+    },
+    {
+      "id": "6",
+      "title": "Software Engineering",
+      "cover": "../src/assets/images/Rectangle 2-5.png",
+      "details": "Covers web technologies such as HTML, CSS, and JavaScript for building websites and web applications.",
+      "credit": 3,
+      "price": 22000
+    },
+    {
+      "id": "7",
+      "title": "Python OOP",
+      "cover": "../src/assets/images/Rectangle 2-0.png",
+      "details": "Teaches OOP concepts and design patterns in programming.",
+      "credit": 2,
+      "price": 15000
+    },
+    {
+      "id": "8",
+      "title": "Database MySQL",
+      "cover": "../src/assets/images/Rectangle 2-2.png",
+      "details": "Explores software development methodologies, project management, and software testing.",
+      "credit": 2,
+      "price": 10000
+    },
+    {
+      "id": "9",
+      "title": "Problem Solving Part-1",
+      "cover": "../src/assets/images/Rectangle 2-6.png",
+      "details": "Introduces the basics of computer networking and network protocols.",
+      "credit": 5,
+      "price": 45000
+    }
+  ]
+  
