@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import Book from './Book';
-const Books = () => {
+import PropTypes from 'prop-types';
+
+const Books = ({handleSelectButton}) => {
     const [books, setBooks] = useState([])
 
     useEffect( () => {
@@ -10,16 +12,20 @@ const Books = () => {
     },[])
   
     return (
-        <div className=' grid grid-cols-3'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
            {
             // console.log(books)
             books.map(book => 
-                    <Book key={book.id} book={book}></Book>
+                    <Book key={book.id} book={book} handleSelectButton={handleSelectButton}></Book>
                 )
            } 
         </div>
     );
 };
 
+Books.propTypes = {
+
+    handleSelectButton: PropTypes.func.isRequired
+}
 
 export default Books;
