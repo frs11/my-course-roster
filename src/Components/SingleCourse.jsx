@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { FiDollarSign } from "react-icons/fi";
 import { IoBookOutline } from "react-icons/io5";
 
-const Book = ({ book, handleSelectButton }) => {
-    const {title, cover, price, details, credit} = book;
+const SingleCourse = ({ course, handleSelectButton }) => {
+    const {title, cover, price, details, credit} = course;
 
     return (
         <div className="bg-white py-3 mx-1 my-2 rounded-lg px-2 shadow-lg">
@@ -23,15 +23,15 @@ const Book = ({ book, handleSelectButton }) => {
                 </div>
             </div>
             <div>
-                <button onClick={() => handleSelectButton(book)} className='w-full bg-blue-500 text-white font-bold mt-2 py-2 rounded-md hover:bg-blue-800'> Select</button>
+                <button onClick={() => handleSelectButton(course)} className='w-full bg-blue-500 text-white font-bold mt-2 py-2 rounded-md hover:bg-blue-800'> Select</button>
             </div>
         </div>
     );
 };
-Book.propTypes = {
+SingleCourse.propTypes = {
 
-    book: PropTypes.object.isRequired,
+    course: PropTypes.object.isRequired,
     handleSelectButton: PropTypes.func.isRequired
 }
 
-export default Book;
+export default SingleCourse;
