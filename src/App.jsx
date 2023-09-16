@@ -2,6 +2,8 @@ import AllCourses from './Components/allCourses'
 import './App.css'
 import { useState, useEffect } from 'react'
 import ShowSelectedCourse from './Components/ShowSelectedCourse'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -17,19 +19,33 @@ function App() {
     .then(data => setAllCourse(data))
   },[])
 
+  const notify = (message) => 
+  {
+    toast.error(message, {
+      position: "top-center",
+      autoClose: 1000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
+  }
+
   const handleSelectButton = (course) =>
   {
     const isExist = chosenCourses.find((item) => item.id == course.id);
     if(isExist)
     {
-      alert("Already Taken!!! Try Another Course!")
+      notify("Already Taken!!! Try Another Course!");
     }
     else
     {
   
       if(totalCredit + course.credit >20 && remainingCredit - course.credit < 0)
       {
-         return alert("Credit Limit Exceed!!!")
+        return notify("Credit Limit Exceed!!! You Don't Have Enough Credit!!");
       }
       else
       {
@@ -58,7 +74,7 @@ function App() {
           handleSelectButton={handleSelectButton}> </AllCourses>
         </div>
 
-
+        <ToastContainer />
           {/* Taken Course Details */}
         <div className='w-11/12 mx-auto md:w-10/12 lg:w-3/12'> 
           <div className='my-4 rounded-md mx-auto bg-white py-3 px-3'>

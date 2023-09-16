@@ -10,7 +10,7 @@ const ShowSelectedCourse = ({chosenCourses, totalCredit, totalPrice, remainingCr
                 <h1 className='text-xl font-semibold ml-3 mt-3'>Course Name</h1>
                 <ul className='list-decimal pl-5 py-4'>
                     {
-                    chosenCourses.map((item, idx) => <li key={idx} className='bg-sky-200 text-gray-700 py-1 px-2 my-2 rounded-md'> {item.title}</li>) 
+                    chosenCourses.map((item, idx) => <li key={idx} className='text-gray-600 py-1 px-2 my-1 rounded-md'> {item.title}</li>) 
                     }
                 </ul>
             </div>
